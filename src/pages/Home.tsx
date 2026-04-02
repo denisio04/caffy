@@ -2,13 +2,13 @@ import { useState, useEffect } from 'react';
 import { WifiOff, QrCode, ChefHat, PackageCheck, Home as HomeIcon, MonitorPlay, Star, HelpCircle, Info, ShieldCheck } from 'lucide-react';
 
 const CAROUSEL_IMAGES = [
-  { src: '/Carrusel/Dashboard.png', title: 'Panel Principal', desc: 'Obtén una visión general de tus ventas, ingresos y toda la actividad en tiempo real.' },
-  { src: '/Carrusel/Caja.png', title: 'Caja Rápida', desc: 'Gestiona cobros, unifica cuentas y emite tickets al instante con una interfaz fluida.' },
-  { src: '/Carrusel/Cocina.png', title: 'Monitor de Cocina', desc: 'Las comandas llegan al chef al momento, logrando una sincronización perfecta con los camareros.' },
-  { src: '/Carrusel/Historial.png', title: 'Historial Auditado', desc: 'Consulta un registro exacto de cada movimiento o venta para tu tranquilidad administrativa.' },
-  { src: '/Carrusel/Inventario.png', title: 'Inventario Inteligente', desc: 'Se descuentan ingredientes automáticamente por cada producto servido. No te quedes sin stock.' },
-  { src: '/Carrusel/Productos.png', title: 'Catálogo de Menú', desc: 'Edita precios, fotos y descripciones de tu menú digital escaneable con total autonomía.' },
-  { src: '/Carrusel/Reporte.png', title: 'Reportes Vivos', desc: 'Decide con inteligencia. Descubre qué horarios son pico y cuáles son tus platos estrella.' },
+  { src: `${import.meta.env.BASE_URL}Carrusel/Dashboard.png`, title: 'Panel Principal', desc: 'Obtén una visión general de tus ventas, ingresos y toda la actividad en tiempo real.' },
+  { src: `${import.meta.env.BASE_URL}Carrusel/Caja.png`, title: 'Caja Rápida', desc: 'Gestiona cobros, unifica cuentas y emite tickets al instante con una interfaz fluida.' },
+  { src: `${import.meta.env.BASE_URL}Carrusel/Cocina.png`, title: 'Monitor de Cocina', desc: 'Las comandas llegan al chef al momento, logrando una sincronización perfecta con los camareros.' },
+  { src: `${import.meta.env.BASE_URL}Carrusel/Historial.png`, title: 'Historial Auditado', desc: 'Consulta un registro exacto de cada movimiento o venta para tu tranquilidad administrativa.' },
+  { src: `${import.meta.env.BASE_URL}Carrusel/Inventario.png`, title: 'Inventario Inteligente', desc: 'Se descuentan ingredientes automáticamente por cada producto servido. No te quedes sin stock.' },
+  { src: `${import.meta.env.BASE_URL}Carrusel/Productos.png`, title: 'Catálogo de Menú', desc: 'Edita precios, fotos y descripciones de tu menú digital escaneable con total autonomía.' },
+  { src: `${import.meta.env.BASE_URL}Carrusel/Reporte.png`, title: 'Reportes Vivos', desc: 'Decide con inteligencia. Descubre qué horarios son pico y cuáles son tus platos estrella.' },
 ];
 
 export default function Home() {
