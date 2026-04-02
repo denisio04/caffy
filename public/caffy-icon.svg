@@ -1,0 +1,9 @@
+<svg width="256" height="256" fill="none" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cup Handle -->
+  <path d="M176 100H202C216.359 100 228 111.641 228 126C228 140.359 216.359 152 202 152H176V100Z" fill="#E0F2F1" stroke="#0B201F" stroke-width="24" stroke-linejoin="round"/>
+  <!-- Coffee Cup Body -->
+  <path d="M72 70H176V150C176 183.137 149.137 210 116 210H110C76.8629 210 50 183.137 50 150V84C50 76.268 56.268 70 64 70H72Z" fill="#E0F2F1" stroke="#0B201F" stroke-width="24" stroke-linejoin="round"/>
+  <!-- Steam Details -->
+  <path d="M100 20V50" stroke="#0B201F" stroke-width="24" stroke-linecap="round"/>
+  <path d="M140 30V60" stroke="#0B201F" stroke-width="24" stroke-linecap="round"/>
+</svg>

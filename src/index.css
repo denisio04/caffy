@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@import "./styles/theme.css";
+@import "tailwindcss";
+
+@theme {
+  /* Tailwind v4 color mapping to CSS variables */
+  --color-background1: var(--background1);
+  --color-background2: var(--background2);
+  --color-foreground1: var(--foreground1);
+  --color-foreground2: var(--foreground2);
+  
+  --color-border: var(--border);
+  --color-border-muted: var(--border-muted);
+
+  --color-brand: var(--accent);
+  --color-hover1: var(--hover-button1);
+  --color-muted: var(--text-muted);
+  --color-dim: var(--text-dim);
+
+  --font-heading: 'Outfit', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-script: 'Great Vibes', cursive;
+
+  /* Shared values */
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-glow: var(--shadow-glow);
+}
+
+/* ── Apple-Style Bento Cards ── */
+.bento-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-card:hover {
+  background-color: var(--surface-hover);
+  box-shadow: var(--shadow-md);
+}
+
+/* ── Selection ── */
+::selection {
+  background-color: var(--accent);
+  color: white;
+}
