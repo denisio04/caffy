@@ -225,7 +225,7 @@ export default function Home() {
     <div className="flex flex-col md:flex-row h-[100dvh] md:min-h-screen w-full relative font-body overflow-hidden">
       
       {/* Global Title for Mobile (Allows Caffy to float over the green background in all tabs) */}
-      <h1 className="md:hidden absolute top-3 left-9/20 -translate-x-1/2 text-[90px] font-light text-foreground2 font-script z-20">Caffy</h1>
+      <h1 className="md:hidden absolute top-3 left-9/20 -translate-x-1/2 text-[70px] font-light text-foreground2 font-script z-20">Caffy</h1>
 
       {/* Full Screen Modal */}
       {isModalOpen && (
