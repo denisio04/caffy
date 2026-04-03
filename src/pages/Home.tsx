@@ -256,14 +256,14 @@ export default function Home() {
       <div className={`${activeTab === 'inicio' ? 'flex' : 'hidden'} md:flex items-center justify-center md:justify-end bg-background2 w-full md:w-1/2 relative py-8 pb-[80px] px-4 md:px-0 md:py-0 md:pb-0 h-[100dvh] md:min-h-screen`}>
         <h1 className="hidden md:block absolute md:top-2 md:left-6 md:translate-x-0 md:text-6xl sm:text-10xl font-light text-foreground2 font-script z-20">Caffy</h1>
         
-        <div className="flex flex-col justify-center py-10 px-8 md:px-12 bg-background1 w-[90%] md:w-[92%] h-[68vh] md:h-[75%] shadow-2xl border border-background1/10 transition-all duration-300 mt-[60px] md:mt-0">
+        <div className="flex flex-col justify-center py-6 px-6 md:py-10 md:px-12 bg-background1 w-[90%] md:w-[92%] h-auto max-h-[72vh] md:h-[75%] shadow-2xl border border-background1/10 transition-all duration-300 mt-12 md:mt-0">
 
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground1 leading-tight md:leading-[1.1] font-heading tracking-tight mb-10  md:mb-8 text-center md:text-left">
+          <h2 className="text-2xl md:text-5xl font-bold text-foreground1 leading-tight md:leading-[1.1] font-heading tracking-tight mb-4 md:mb-8 text-center md:text-left">
             Control total para<br className="hidden md:block"/> tu cafetería.
           </h2>
 
-          <div className="space-y-6 mb-10 text-center md:text-left">
-            <p className="text-lg md:text-xl font-medium leading-relaxed text-foreground1 opacity-90 mx-auto md:mx-0 max-w-[95%] md:max-w-[90%]">
+          <div className="space-y-4 mb-6 md:space-y-6 md:mb-10 text-center md:text-left">
+            <p className="text-base md:text-xl font-medium leading-relaxed text-foreground1 opacity-90 mx-auto md:mx-0 max-w-[95%] md:max-w-[90%]">
               El sistema de Punto de Venta (POS) definitivo con menú QR, monitor de cocina, pedidos en tiempo real y gestión de inventario automático.
             </p>
             <p className="hidden md:block text-base md:text-lg font-normal leading-relaxed text-foreground1/70 mx-auto md:mx-0 max-w-[95%] md:max-w-[90%]">
