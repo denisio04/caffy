@@ -225,7 +225,7 @@ export default function Home() {
     <div className="flex flex-col md:flex-row h-[100dvh] md:min-h-screen w-full relative font-body overflow-hidden">
       
       {/* Global Title for Mobile (Allows Caffy to float over the green background in all tabs) */}
-      <h1 className="md:hidden absolute top-3 left-9/20 -translate-x-1/2 text-[70px] font-light text-foreground2 font-script z-20">Caffy</h1>
+      <h1 className="md:hidden absolute top-3 left-9/20 -translate-x-1/2 text-[60px] font-light text-foreground2 font-script z-20">Caffy</h1>
 
       {/* Full Screen Modal */}
       {isModalOpen && (
@@ -258,7 +258,7 @@ export default function Home() {
         
         <div className="flex flex-col justify-center py-10 px-8 md:px-12 bg-background1 w-[90%] md:w-[92%] h-[68vh] md:h-[75%] shadow-2xl border border-background1/10 transition-all duration-300 mt-[60px] md:mt-0">
 
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground1 leading-tight md:leading-[1.1] font-heading tracking-tight mb-6 md:mb-8 text-center md:text-left">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground1 leading-tight md:leading-[1.1] font-heading tracking-tight mb-10  md:mb-8 text-center md:text-left">
             Control total para<br className="hidden md:block"/> tu cafetería.
           </h2>
 
@@ -266,16 +266,33 @@ export default function Home() {
             <p className="text-lg md:text-xl font-medium leading-relaxed text-foreground1 opacity-90 mx-auto md:mx-0 max-w-[95%] md:max-w-[90%]">
               El sistema de Punto de Venta (POS) definitivo con menú QR, monitor de cocina, pedidos en tiempo real y gestión de inventario automático.
             </p>
-            <p className="text-base md:text-lg font-normal leading-relaxed text-foreground1/70 mx-auto md:mx-0 max-w-[95%] md:max-w-[90%]">
+            <p className="hidden md:block text-base md:text-lg font-normal leading-relaxed text-foreground1/70 mx-auto md:mx-0 max-w-[95%] md:max-w-[90%]">
               Funciona 100% en tu red local: sin caídas de conexión, sin lentitud y sin suscripciones mensuales. La herramienta que tu negocio merece.
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center md:justify-start">
-            <button className="w-full sm:w-auto bg-background2 text-foreground2 px-8 py-3 transition-colors cursor-pointer border-1 border-background2 font-bold hover:bg-background1 hover:text-background2" onClick={() => window.open('https://wa.me/5356659558', '_blank')}>
+          {/* Mobile: Stacked text buttons */}
+          <div className="flex md:hidden flex-col gap-3 items-center w-full">
+            <button 
+              className="w-full bg-background2 text-foreground2 px-6 py-2.5 transition-colors cursor-pointer border border-background2 font-bold hover:bg-background1 hover:text-background2"
+              onClick={() => window.open('https://wa.me/5356659558', '_blank')}
+            >
               Contacto
             </button>
-            <button className="w-full sm:w-auto bg-background2 text-foreground2 px-8 py-3 hover:opacity-90 transition-colors cursor-pointer border-1 border-foreground1 font-bold hover:bg-background1 hover:text-background2 hover:border-background2" onClick={() => window.open('https://mega.nz/file/07owHADb#HkRabrj3PFlBj1uxrL14NCPh3S7HSzRho-oikQ-0ctE', '_blank')}>
+            <button 
+              className="w-full bg-background2 text-foreground2 px-6 py-2.5 transition-colors cursor-pointer border border-foreground1 font-bold hover:bg-background1 hover:text-background2 hover:border-background2"
+              onClick={() => window.open('https://mega.nz/file/07owHADb#HkRabrj3PFlBj1uxrL14NCPh3S7HSzRho-oikQ-0ctE', '_blank')}
+            >
+              Descargar v1.0.0
+            </button>
+          </div>
+
+          {/* Desktop: Full text buttons */}
+          <div className="hidden md:flex flex-row gap-4 items-center justify-between">
+            <button className="bg-background2 text-foreground2 px-8 py-3 transition-colors cursor-pointer border-1 border-background2 font-bold hover:bg-background1 hover:text-background2" onClick={() => window.open('https://wa.me/5356659558', '_blank')}>
+              Contacto
+            </button>
+            <button className="bg-background2 text-foreground2 px-8 py-3 hover:opacity-90 transition-colors cursor-pointer border-1 border-foreground1 font-bold hover:bg-background1 hover:text-background2 hover:border-background2" onClick={() => window.open('https://mega.nz/file/07owHADb#HkRabrj3PFlBj1uxrL14NCPh3S7HSzRho-oikQ-0ctE', '_blank')}>
               Descargar v1.0.0
             </button>
           </div>
